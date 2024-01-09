@@ -234,6 +234,7 @@ for bar2 in bars2.patches:
     axes[0].text(bar2.get_x() + bar2.get_width()/2, yval2, round(yval2, 2), ha='center', va='bottom')
 
 # Partie 2
+with pd.option_context('mode.use_inf_as_null', True)
 # Graphique 2: Line Plot - Total Sales Over Time
 sales_per_date = Df.groupby('Calculated_Date')['Order_Quantity'].sum()
 sns.lineplot(x=sales_per_date.index, y=sales_per_date.values, color= '0.75')
