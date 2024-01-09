@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
     
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 data = pd.read_csv('sales7data.csv')
 
